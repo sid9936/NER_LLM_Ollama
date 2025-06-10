@@ -20,7 +20,7 @@ def process_prompt(prompt: Prompt):
     # Named Entity Recognition using spaCy
     doc = nlp(text)
     entities = [(ent.text, ent.label_) for ent in doc.ents]
-    print("🔍 Detected Entities:", entities)
+    print("Detected Entities:", entities)
 
     # Call local LLM using Ollama REST API
     try:
